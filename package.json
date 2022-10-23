@@ -5,15 +5,20 @@
     "main": "src/server.js",
     "scripts": {
         "build": "tsc",
-        "dev": "tsnd --exit-child src/server.ts"
+        "dev": "tsnd --exit-child -r dotenv/config src/server.ts"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
         "@prisma/client": "^4.3.1",
+        "@types/express-session": "^1.17.5",
         "cors": "^2.8.5",
-        "express": "^4.18.1"
+        "dotenv": "^16.0.2",
+        "express": "^4.18.1",
+        "express-openid-connect": "^2.8.0",
+        "passport-oauth2": "^1.6.1",
+        "passport-oauth2-strategy": "^1.0.4"
     },
     "devDependencies": {
         "@types/cors": "^2.8.12",
